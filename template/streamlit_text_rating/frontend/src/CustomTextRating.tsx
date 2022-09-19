@@ -45,7 +45,7 @@ class streamlit_text_rating extends StreamlitComponentBase<State> {
           fontFamily:font_family,
           padding:'-6px',
           borderRadius:'6px',}}>
-          <li>{text}</li>
+          {text}
           </p>
             <IconButton onClick={this.onClickedLike} style={{outline:'none',paddingTop:'0px',paddingBottom:'0px'}}>
               <ThumbUpIcon color={this.state.hasClickedLike?'success':'disabled'}/>
